@@ -14,7 +14,7 @@ Kích thước | Dung lượng
 5 1⁄4" | 1.2 MB
 3 1/2" | 1.44 MB
 
-Do dung lượng lưu trữ thấp và kích thước lớn, ngày nay, Đĩa mềm không còn được sử dụng nhiều để lưu trữ dữ liệu di động và được thay thế bởi  các phương thức lưu trữ mới như Bộ nhớ Flash, Ổ cứng di động, hay Điện toán đám mây...
+Do dung lượng lưu trữ thấp và kích thước lớn, ngày nay, Đĩa mềm không còn được sử dụng nhiều để lưu trữ dữ liệu di động và được thay thế bởi các phương thức lưu trữ mới như Bộ nhớ Flash, Ổ cứng di động, hay Điện toán đám mây...
 
 Trong nội dung môn học này, ta sử dụng Đĩa mềm ảo, một dạng của bộ nhớ ảo, nhằm tạo ra môi trường đọc/ghi dữ liệu không ảnh hưởng đến tài nguyên lưu trữ chính của hệ thống.
 
@@ -22,11 +22,17 @@ Trong nội dung môn học này, ta sử dụng Đĩa mềm ảo, một dạng 
 
 ### 3.1. Tải phần mềm
 
-Tải về gói phần mềm tạo VFD tại địa chỉ sau: https://goo.gl/HgyVvv.
+Tải gói phần mềm tạo VFD [tại đây](https://goo.gl/HgyVvv).
 
 ### 3.2. Cài đặt trình điều khiển
 
-VFD yêu cầu một Trình Điều khiển (driver) để có thể truy cập như ổ đĩa vật lý, được cung cấp với tập tin *vfs.sys*. Tuy nhiên, driver này  chưa được chứng thực bởi nhà cung cấp, làm phát sinh vấn đề không cài đặt được trên Windows 7 và các Hệ Điều hành ra đời sau nó. Để giải quyết vấn đề này, ta cần thực hiện theo các bước sau:
+VFD yêu cầu một Trình Điều khiển (driver) để có thể truy cập như ổ đĩa vật lý, được cung cấp với tập tin *vfs.sys*. 
+
+Đối với các hệ điều hành (HĐH) thế hệ cũ (từ Windows XP trở về trước): Thực hiện từ bước 3.3.
+
+Đối với các HĐH từ Windows 8 trở về sau: Cài đặt Windows XP trên môi trường máy ảo, sử dụng VMWare Workstation Player được cung cấp miễn phí [tại đây](https://www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html).
+
+Đối với HĐH Windows 7: Thực hiện tương tự như đối với Windows 8, hoặc có thể thực hiện theo các bước sau:
 
 **Bước 1:** Mở chưong trình **dseo13b.exe**.
 
@@ -102,4 +108,4 @@ Sau khi thực hiện bước 3, một ổ đĩa mới xuất hiện trên hệ 
 
 ![](imgs/ex-1/img14.jpg)
 
-Điều chỉnh đường dẫn tập tin đĩa ở thông tin *Target File*. Sau đó chọn *Save* để lưu 
+Điều chỉnh đường dẫn tập tin đĩa ở thông tin *Target File*. Sau đó chọn *Save* để lưu.
