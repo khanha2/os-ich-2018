@@ -134,8 +134,13 @@ Ví dụ nội dung tập tin:
 
 Tập tin nhị phân có đuôi *.dat* với mỗi dòng dữ liệu chứa trong tập tin là một vùng đệm (buffer, hay khối dữ liệu) chứa 3 thông tin lần lượt là C1, C2, C3.
 
-**Bài tập 2:** Viết chương trình đọc và hiển thị nội dung một tập tin ra màn hình dưới dạng HEX.
+**Bài tập 2:** Viết chương trình đọc và hiển thị thông tin phần tiêu đề của tập tin có phần mở rộng *.doc*, được mô tả trong bảng sau:
 
-Trường hợp tập tin thuộc dạng văn bản thô (ví dụ: *txt*, *csv*): dữ liệu trả về dưới dạng văn bản.
-
-Trường hợp tập tin thuộc dạng tập tin có cấu trúc (tập tin nhị phân) (ví dụ: *exe*, *zip*, *doc*): dữ liệu bên trong được ghi dưới dạng các buffer liên tiếp nhau.
+Vị trí (offset) | Kích thước (byte) | Nội dung
+-|-|-
+0 | 8 | Định danh tập tin *.doc*, chứa dãy số D0 CF 11 E0 A1 B1 1A E1
+8 | 16 | Số UID của tập tin, thường mang giá trị 0
+24 | 2 | Phiên bản sửa đổi (revision) của cấu trúc tập tin (thường mang giá trị 003E)
+26 | 2 | Phiên bản (version) của cấu trúc tập tin (thường mang giá trị 0003)
+28 | 2 | Định dang thứ tự đọc trên một byte, mang một trong 2 giá trị: FEH FFH (Little-Endian), FFH FEH (Big-Endian)
+30 | 2 | Kích thước một sector của tập tin.
