@@ -1,11 +1,11 @@
-# Các Kỹ thuật lập trình liên quan đến thư mục và tập tin
+# Các kỹ thuật lập trình liên quan đến tập tin
 
 ## 1. Tổng quan
 
-Nội dung trong bài tập này bao gồm:
+Bài tập này gồm các nội dung:
 
-- Các kỹ thuật lập trình liên quan đến tập tin.
-- Các hàm trong thư việc `Windows.h` và `direct.h`.
+- Đọc/ghi tập tin theo dạng nhị phân.
+- Hiển thị thông tin dựa trên kiểu dữ liệu đã quy ước.
 
 ## 2. Đọc/ghi tập tin
 
@@ -80,7 +80,7 @@ Ví dụ:
 
 ```c
 int a = 123, b = 15;
-printf(“%-4d%5d”, a, b);
+printf("%-4d%5d", a, b);
 ```
 
 Kết quả: dành 4 khoảng trống và canh trái cho biến a; dành 5 khoảng trống và canh phải cho biến b
@@ -106,7 +106,7 @@ Ví dụ:
 
 ```c
 int a = 4; float b = 1.2, c = 2.126;
-printf(“%-5.3d%6.2f%7.2f”, a, b, c);
+printf("%-5.3d%6.2f%7.2f", a, b, c);
 ```
 
 Kết quả: dành 5 khoảng trống, canh trái, 3 số để biểu diễn biến a; dành 6 khoảng trống, canh phải, 2 số lẻ để biểu diễn biến b; dành 7 khoảng trống, canh phải, 2 số lẻ để biểu diễn biến c.
@@ -135,3 +135,7 @@ Ví dụ nội dung tập tin:
 Tập tin nhị phân có đuôi *.dat* với mỗi dòng dữ liệu chứa trong tập tin là một vùng đệm (buffer, hay khối dữ liệu) chứa 3 thông tin lần lượt là C1, C2, C3.
 
 **Bài tập 2:** Viết chương trình đọc và hiển thị nội dung một tập tin ra màn hình dưới dạng HEX.
+
+Trường hợp tập tin thuộc dạng văn bản thô (ví dụ: *txt*, *csv*): dữ liệu trả về dưới dạng văn bản.
+
+Trường hợp tập tin thuộc dạng tập tin có cấu trúc (tập tin nhị phân) (ví dụ: *exe*, *zip*, *doc*): dữ liệu bên trong được ghi dưới dạng các buffer liên tiếp nhau.
