@@ -7,7 +7,7 @@ Bài tập này gồm các nội dung:
 - Đọc/ghi tập tin theo dạng nhị phân.
 - Hiển thị thông tin dựa trên kiểu dữ liệu đã quy ước.
 
-## 2. Đọc/ghi tập tin
+## 2. Nội dung
 
 ### 2.1. Các hàm liên quan đến tập tin
 
@@ -115,7 +115,7 @@ Kết quả: dành 5 khoảng trống, canh trái, 3 số để biểu diễn bi
 004    1.20   2.13
 ```
 
-### 2.4. Bài tập
+## 3. Bài tập
 
 **Bài tập 1:** Viết chương trình mã hóa nội dung của một tập tin từ dạng bảng tính thô sang dạng tập tin nhị phân và chương trình giải mã tương ứng. Bảng tính thô là một tập tin *csv* với mỗi ô ngăn cách nhau bởi khoảng trắng và có các cột được mô tả như sau:
 
