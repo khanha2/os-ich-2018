@@ -142,5 +142,5 @@ Vị trí (offset) | Kích thước (byte) | Nội dung
 8 | 16 | Số UID của tập tin, thường mang giá trị 0
 24 | 2 | Phiên bản sửa đổi (revision) của cấu trúc tập tin (thường mang giá trị 003E)
 26 | 2 | Phiên bản (version) của cấu trúc tập tin (thường mang giá trị 0003)
-28 | 2 | Định dang thứ tự đọc trên một byte, mang một trong 2 giá trị: FEH FFH (Little-Endian), FFH FEH (Big-Endian)
+28 | 2 | Định dang thứ tự đọc trên một byte, mang một trong 2 giá trị: FE FF (Little-Endian), FF FE (Big-Endian)
 30 | 2 | Kích thước một sector của tập tin.
