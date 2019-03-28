@@ -119,6 +119,22 @@ Kết quả trả về: trả về `TRUE` nếu thực hiện ghi thành công, 
 
 **Bài tập 4.2:** Đọc cấu trúc FAT trên Đĩa mềm ảo (phương thức kết nối đã được hướng dẫn trong **Bài tập 1**).
 
+Vị trí (offset) | Kích thước (byte) | Kiểu dữ liệu |  Nội dung
+-|-|-|-
+0 | 3 | byte[] (hay char[]) | lệnh nhảy (jump instruction), thường mang giá trị `EB 3C 90`.
+3 | 8 | byte[] (hay char[]) | Tên hệ thống triển khai cấu trúc.
+11 | 2 | short | Số byte mỗi sector.
+13 | 1 | byte (hay char) | Số sector mỗi cluster.
+14 | 2 | short | Số sector dự trữ.
+16 | 1 | byte (hay char) | Số bảng cấp phát tập tin (bảng FAT).
+17 | 2 | short | Số lượng tối đa các mục (chỉ chung tập tin và thư mục) trong thư mục gốc.
+19 | 2 | short | Tổng số sectors (trong trường hợp giá trị là 0, sử dụng giá trị ở vị trí 32).
+21 | 1 | byte (hay char) | Mô tả thiết bị (trong bài tập này, giá trị đọc được thường bằng `F0`).
+22 | 2 | short | Số sector cho mỗi bảng FAT.
+24 | 2 | short | Số sector ở mỗi track.
+26 | 2 | short | Số đầu đọc.
+28 | 4 | int | Số sector ẩn.
+32 | 4 | int | Tổng số sectors.
 
 ## 4. Tài liệu tham khảo
 
@@ -126,3 +142,4 @@ Kết quả trả về: trả về `TRUE` nếu thực hiện ghi thành công, 
 - https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-setfilepointerex
 - https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-readfile
 - https://docs.microsoft.com/en-us/windows/desktop/api/fileapi/nf-fileapi-writefile
+- https://en.wikipedia.org/wiki/Design_of_the_FAT_file_system
