@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 # Bài tập 5: Thao tác trên hệ thống tập tin FAT
 
 ## 1. Tổng quan
