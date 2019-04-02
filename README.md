@@ -7,3 +7,5 @@
 [Bài tập 3: Các kỹ thuật lập trình liên quan đến tập tin và thư mục](https://github.com/khanha2/os-ich-2018/blob/master/ex-3.md)
 
 [Bài tập 4: Kỹ thuật lập trình đọc/ghi sử dụng Windows API](https://github.com/khanha2/os-ich-2018/blob/master/ex-4.md)
+
+[Bài tập 5: Thao tác trên hệ thống tập tin FAT](https://github.com/khanha2/os-ich-2018/blob/master/ex-5.md)
