@@ -45,16 +45,16 @@ $$
 
 Vậy muốn đánh hết địa chỉ cho vùng dữ liệu bằng FAT12 thì phải sử dụng 9 sector cho bảng FAT.
 
-Mỗi phần tử trong bảng FAT chứa lần lượt các thông tin sau:
+Gía trị của mỗi phần tử trong bảng FAT có ý nghĩa như sau:
 
-Offset | Mô tả
+Giá trị | Mô tả
 -|-
 0 | Cluster còn trống.
-1 | Giá trị dành riêng, không sử dụng.
-2 - 4079 | Các cluster sử dụng, giá trị là chỉ số của cluster kế tiếp trong dãy dũ liệu chứa tập tin.
-4080 - 4086 | Các giá trị dành riêng, không dùng.
-4087 | Sector hỏng trong cluster hoặc cluster dự trữ.
-4088 - 4095 | Cluster cuối cùng của tập tin.
+1 (0x001) | Giá trị dành riêng, không sử dụng.
+2 - 4079 (0x002 - 0xFEF) | Các cluster sử dụng, giá trị là chỉ số của cluster kế tiếp trong dãy dũ liệu chứa tập tin.
+4080 - 4086 (0xFF0 - 0xFF6) | Các giá trị dành riêng, không dùng.
+4087 (0xFF7) | Sector hỏng trong cluster hoặc cluster dự trữ.
+4088 - 4095 (0xFF8 - 0xFFF) | Cluster cuối cùng của tập tin.
 
 ### 2.3. Bảng thư mục gốc
 
