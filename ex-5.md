@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 # Bài tập 5: Thao tác trên hệ thống tập tin FAT
 
 ## 1. Tổng quan
@@ -118,7 +116,7 @@ int GetFatValue(int k, unsigned char* Fat) {
     int nHi = Fat[i + 1];
     int nLo = Fat[i];
 
-    if (k%2 == 0) {
+    if (k % 2 == 0) {
         return (nLo | ((nHi & 0xF) << 8));
     }
 
