@@ -116,7 +116,7 @@ int GetFatValue(int k, unsigned char* Fat) {
     int nHi = Fat[i + 1];
     int nLo = Fat[i];
 
-    if (k%2 == 0) {
+    if (k % 2 == 0) {
         return (nLo | ((nHi & 0xF) << 8));
     }
 
